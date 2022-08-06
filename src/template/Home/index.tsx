@@ -1,13 +1,19 @@
-import Test from 'components/TestComponent';
+import DescriptionSectionTemplate from './DescrptionSection';
+import ImageSectionTemplate from './ImageSection';
+import Navbar from './Navbar';
 import * as S from './styles';
+import WorksopSectionTemplate from './WorkshopSection';
 
 const HomeTemplate = () => (
-    <S.Container>
-        <S.Title>
-            Esse template foi criado pela equipe de Research 21.1 para projetos
-            internos da Polijunior.
-        </S.Title>
-        <Test title="Esse componente é um teste" />
-    </S.Container>
+    <S.Wrapper>
+        <Navbar />
+        <S.Container>
+            <S.TextContainer>
+                <DescriptionSectionTemplate />
+                <WorksopSectionTemplate />
+            </S.TextContainer>
+            <ImageSectionTemplate />
+        </S.Container>
+    </S.Wrapper>
 );
 export default HomeTemplate;

@@ -8,6 +8,9 @@ export const Container = styled.div`
     justify-content: space-between;
     border-bottom: solid 1px white;
     padding: 3rem;
+    @media screen and (max-width: 900px) {
+        height: 9rem;
+    }
 `;
 
 export const Logo = styled.img`
@@ -34,4 +37,9 @@ export const Button = styled.button`
     border-radius: 80px;
     border: solid 3px white;
     cursor: pointer;
+    @media screen and (max-width: 900px) {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        width: 15rem;
+    }
 `;

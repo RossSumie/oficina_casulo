@@ -33,6 +33,9 @@ export const IconContainer = styled.div`
     border: solid 1px white;
     width: 30vw;
     height: 15vh;
+    @media screen and (max-width: 900px) {
+        width: 100vw;
+    }
 `;
 
 export const TextContainer = styled.div`

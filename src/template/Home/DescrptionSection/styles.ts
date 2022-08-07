@@ -6,6 +6,10 @@ export const Title = styled.h1`
     font-family: 'Retro Cool';
     letter-spacing: 0.5rem;
     line-height: 12vh;
+    @media screen and (max-width: 900px) {
+        font-size: 7vh;
+        line-height: 8vh;
+    }
 `;
 
 export const Container = styled.div`
@@ -16,7 +20,6 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-    margin-top: 3rem;
     font-size: 2rem;
     color: white;
     width: 20rem;
@@ -25,6 +28,7 @@ export const Button = styled.button`
     padding: 1.5rem;
     border-radius: 80px;
     border: solid 3px white;
+    margin-top: 24px;
     cursor: pointer;
 `;
 

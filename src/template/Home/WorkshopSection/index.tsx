@@ -5,7 +5,7 @@ const WorksopSectionTemplate = () => {
     const size = useWindowSize();
     return (
         <>
-            {!!size.width && size.width > 900 ? (
+            {!!size.width && size.width > 1100 ? (
                 <S.Container>
                     <S.LineContainer>
                         <S.IconContainer>

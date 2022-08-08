@@ -6,7 +6,7 @@ export const Title = styled.h1`
     font-family: 'Retro Cool';
     letter-spacing: 0.5rem;
     line-height: 12vh;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1500px) {
         font-size: 7vh;
         line-height: 8vh;
     }
@@ -20,55 +20,20 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-    border-radius: 10em;
-    margin-top: 24px;
-    padding: 1.5rem;
-    outline: none;
+    font-size: 2rem;
+    margin-top: 2rem;
     color: white;
     width: 20rem;
-    font-size: 2rem;
+    background-color: ${({ theme }) => theme.colors.orange};
     font-family: 'Poppins';
-    position: relative;
-    z-index: 1;
+    padding: 1.5rem;
+    border-radius: 80px;
+    border: solid 3px white;
     cursor: pointer;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
-    &:before,
-    &:after {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        border-radius: 10em;
-        transform: translateX(-50%) translateY(-50%);
-        width: 105%;
-        height: 105%;
-        content: '';
-        z-index: -2;
-        background-size: 400% 400%;
-        background: linear-gradient(
-            60deg,
-            #42788c,
-            #623d68,
-            #bf443f,
-            #df7d4e,
-            #e9bb4d,
-            #88a952,
-            #42788c,
-            #623d68,
-            #bf443f
-        );
-    }
-    &:before {
-        transition: all 0.25s ease;
-        animation: pulse 10s infinite ease;
-    }
-    &:after {
-        filter: blur(0.3px);
-    }
-    &:hover {
-        &:before {
-            width: 115%;
-            height: 115%;
-        }
+    @media screen and (max-width: 1500px) {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        width: 15rem;
     }
 `;
 
@@ -84,9 +49,9 @@ export const Wrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6rem;
-    background-color: ${({ theme }) => theme.colors.blue};
-    @media screen and (max-width: 900px) {
+    padding: 3rem;
+    background-color: ${({ theme }) => theme.colors.orange};
+    @media screen and (max-width: 1500px) {
         width: 100vw;
         padding: 4vw;
     }

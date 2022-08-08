@@ -8,7 +8,7 @@ export const Container = styled.div`
     justify-content: space-between;
     border-bottom: solid 1px white;
     padding: 3rem;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1500px) {
         height: 9rem;
     }
 `;
@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const Logo = styled.img`
     width: 8rem;
     height: auto;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1500px) {
         width: 6rem;
     }
 `;
@@ -31,13 +31,13 @@ export const Button = styled.button`
     font-size: 2rem;
     color: white;
     width: 20rem;
-    background-color: ${({ theme }) => theme.colors.blue};
+    background-color: ${({ theme }) => theme.colors.orange};
     font-family: 'Poppins';
     padding: 1.5rem;
     border-radius: 80px;
     border: solid 3px white;
     cursor: pointer;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1500px) {
         padding: 0.5rem;
         font-size: 1.5rem;
         width: 15rem;

@@ -14,8 +14,8 @@ export const Container = styled.div`
     align-items: center;
     border-top: solid 1px white;
     justify-content: center;
-    background-color: ${({ theme }) => theme.colors.blue};
-    @media screen and (max-width: 900px) {
+    background-color: ${({ theme }) => theme.colors.orange};
+    @media screen and (max-width: 1500px) {
         width: 100vw;
     }
 `;
@@ -32,8 +32,8 @@ export const IconContainer = styled.div`
     padding: 2rem;
     border: solid 1px white;
     width: 30vw;
-    height: 15vh;
-    @media screen and (max-width: 900px) {
+    height: 20vh;
+    @media screen and (max-width: 1500px) {
         width: 100vw;
     }
 `;
@@ -45,7 +45,7 @@ export const TextContainer = styled.div`
 `;
 
 export const Text = styled.h1`
-    font-size: 1.5vh;
+    font-size: 1.85vh;
     color: white;
     font-family: 'Poppins';
 `;
@@ -54,7 +54,7 @@ export const Icon = styled.img`
     width: 8rem;
     height: auto;
     margin: 1.5rem;
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1500px) {
         width: 6rem;
     }
 `;

@@ -24,7 +24,7 @@ export const Button = styled.button`
     margin-top: 2rem;
     color: white;
     width: 20rem;
-    background-color: ${({ theme }) => theme.colors.orange};
+    background-color: ${({ theme }) => theme.colors.dark_orange};
     font-family: 'Poppins';
     padding: 1.5rem;
     border-radius: 80px;
@@ -50,7 +50,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: center;
     padding: 3rem;
-    background-color: ${({ theme }) => theme.colors.orange};
+    background-color: ${({ theme }) => theme.colors.dark_orange};
     @media screen and (max-width: 1500px) {
         width: 100vw;
         padding: 4vw;

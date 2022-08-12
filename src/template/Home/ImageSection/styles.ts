@@ -7,7 +7,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: ${({ theme }) => theme.colors.orange};
+    background-color: ${({ theme }) => theme.colors.dark_orange};
     @media screen and (max-width: 1500px) {
         width: 100vw;
         order: 1;
@@ -15,8 +15,9 @@ export const Container = styled.div`
 `;
 
 export const Image = styled.img`
-    width: 100rem;
+    width: 50rem;
     @media screen and (max-width: 1500px) {
-        width: 18rem;
+        width: 20rem;
+        margin: 3rem;
     }
 `;

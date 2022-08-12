@@ -6,7 +6,7 @@ const DescriptionSectionTemplate = () => {
     return (
         <S.Wrapper>
             <S.Container>
-                <S.Title>Participe da primeira Oficina Casulo!</S.Title>
+                <S.Title>Participe da primeira OFICINA CASULO!</S.Title>
                 <S.Text>
                     A Oficina Casulo é uma semana de oficinas de capacitação
                     técnica gratuita organizada pela PoliJúnior, PoliNegra e

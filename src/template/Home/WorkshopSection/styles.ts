@@ -14,7 +14,7 @@ export const Container = styled.div`
     align-items: center;
     border-top: solid 1px white;
     justify-content: center;
-    background-color: ${({ theme }) => theme.colors.orange};
+    background-color: ${({ theme }) => theme.colors.dark_orange};
     @media screen and (max-width: 1500px) {
         width: 100vw;
     }

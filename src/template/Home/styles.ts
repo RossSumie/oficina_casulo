@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    background-color: ${({ theme }) => theme.colors.orange};
+    background-color: ${({ theme }) => theme.colors.dark_orange};
     flex-direction: column;
     display: flex;
     @media screen and (max-width: 1500px) {

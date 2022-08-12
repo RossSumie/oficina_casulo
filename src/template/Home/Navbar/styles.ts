@@ -31,7 +31,7 @@ export const Button = styled.button`
     font-size: 2rem;
     color: white;
     width: 20rem;
-    background-color: ${({ theme }) => theme.colors.orange};
+    background-color: ${({ theme }) => theme.colors.dark_orange};
     font-family: 'Poppins';
     padding: 1.5rem;
     border-radius: 80px;
@@ -42,4 +42,11 @@ export const Button = styled.button`
         font-size: 1.5rem;
         width: 15rem;
     }
+`;
+
+export const NavText = styled.h1`
+    font-size: 2rem;
+    font-family: 'Poppins';
+    color: white;
+    cursor: pointer;
 `;

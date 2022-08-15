@@ -13,11 +13,29 @@ export const Container = styled.div`
     }
 `;
 
+export const DrawerHeader = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px 0px 32px;
+    background-color: ${({ theme }) => theme.colors.orange};
+`;
+
+export const DrawerWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: ${({ theme }) => theme.colors.orange};
+`;
+
 export const Logo = styled.img`
     width: 8rem;
     height: auto;
     @media screen and (max-width: 1500px) {
-        width: 6rem;
+        width: 4rem;
     }
 `;
 
@@ -44,9 +62,17 @@ export const Button = styled.button`
     }
 `;
 
+export const ItemContainer = styled.div`
+    display: flex;
+`;
+
 export const NavText = styled.h1`
+    margin-right: 3rem;
     font-size: 2rem;
     font-family: 'Poppins';
     color: white;
     cursor: pointer;
+    @media screen and (max-width: 1500px) {
+        font-size: 1.5rem;
+    }
 `;

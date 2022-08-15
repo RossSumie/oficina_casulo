@@ -10,8 +10,8 @@ const DescriptionSectionTemplate = () => {
                 <S.Text>
                     A Oficina Casulo é uma semana de oficinas de capacitação
                     técnica gratuita organizada pela PoliJúnior, PoliNegra e
-                    PoliPride dedicada à pessoas LGBTQIA+ e pessoas pretas e
-                    pardas que estudam na Escola Politécnica.
+                    PoliPride dedicada à pessoas LGBTQIA+ e pessoas negras* que
+                    estudam na Escola Politécnica.
                 </S.Text>
                 <S.Button
                     onClick={() => {

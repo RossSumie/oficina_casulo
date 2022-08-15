@@ -5,7 +5,7 @@ export const Title = styled.h1`
     color: white;
     font-family: 'Retro Cool';
     letter-spacing: 0.5rem;
-    line-height: 12vh;
+    line-height: 9.5vh;
     @media screen and (max-width: 1500px) {
         font-size: 7vh;
         line-height: 8vh;
@@ -20,16 +20,46 @@ export const Container = styled.div`
 `;
 
 export const Button = styled.button`
-    font-size: 2rem;
-    margin-top: 2rem;
+    border: 2px solid white;
+    border-radius: 3rem;
     color: white;
-    width: 20rem;
     background-color: ${({ theme }) => theme.colors.dark_orange};
     font-family: 'Poppins';
-    padding: 1.5rem;
-    border-radius: 80px;
-    border: solid 3px white;
-    cursor: pointer;
+    font-size: 2rem;
+    width: 20rem;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+
+    &::after {
+        background-color: ${({ theme }) => theme.colors.purple};
+        border-radius: 3rem;
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-100%, 0) rotate(10deg);
+        transform-origin: top left;
+        transition: 0.2s transform ease-out;
+        will-change: transform;
+        z-index: -1;
+    }
+
+    &:hover::after {
+        transform: translate(0, 0);
+    }
+
+    &:hover {
+        color: white;
+        transform: scale(1.05);
+        will-change: transform;
+    }
     @media screen and (max-width: 1500px) {
         padding: 0.5rem;
         font-size: 1.5rem;
@@ -39,6 +69,13 @@ export const Button = styled.button`
 
 export const Text = styled.p`
     font-size: 2vh;
+    color: white;
+    font-family: 'Poppins';
+    margin-bottom: 1.5rem;
+`;
+export const SubText = styled.p`
+    margin-top: 2rem;
+    font-size: 1.25vh;
     color: white;
     font-family: 'Poppins';
 `;

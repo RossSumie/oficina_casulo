@@ -47,6 +47,9 @@ export const Text = styled.p`
         font-size: 16px;
         word-break: break-all;
     }
+    @media screen and (max-width: 1500px) {
+        word-break: none;
+    }
 `;
 
 export const GridItem = styled.div`

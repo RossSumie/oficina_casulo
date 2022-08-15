@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import * as S from './styles';
 
 const DescriptionSectionTemplate = () => {
@@ -20,6 +21,14 @@ const DescriptionSectionTemplate = () => {
                 >
                     PARTICIPE!
                 </S.Button>
+                <S.SubText>
+                    *Se você se identifica como pardo, marque opção de pessoa
+                    negra na inscrição! Não usamos mais o termo pardo :) clique{' '}
+                    <Link href="https://www.youtube.com/watch?v=N0G-RxI94cQ">
+                        aqui
+                    </Link>{' '}
+                    para saber o porquê;
+                </S.SubText>
             </S.Container>
         </S.Wrapper>
     );
